@@ -1,3 +1,6 @@
+#custom to me
+copyFromUpstreamProject.bat
+
 #built application files
 *.apk
 *.ap_
