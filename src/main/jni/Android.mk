@@ -1,4 +1,6 @@
 LOCAL_PATH := $(call my-dir)
+TOP_LOCAL_PATH := $(LOCAL_PATH)
+MUPDF_ROOT := $(LOCAL_PATH)
 
 ifdef NDK_PROFILER
 include android-ndk-profiler.mk
@@ -16,7 +18,7 @@ LOCAL_C_INCLUDES := \
 	include\
 	source/fitz\
 	source/pdf
-
+LOCAL_CFLAGS :=
 LOCAL_MODULE:= mupdf
 LOCAL_SRC_FILES := mupdf.c
 
